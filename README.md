@@ -1,2 +1,2 @@
-# UCNDomain
-This is a generic repository for domain driven
+# UcnDomainDriven
+This is a simple implementation of helper classes when building domain driven software at UCN
