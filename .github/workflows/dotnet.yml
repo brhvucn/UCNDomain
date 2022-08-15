@@ -23,7 +23,3 @@ jobs:
       run: dotnet build --no-restore ./UcnDomainDriven/
     - name: Test
       run: dotnet test --no-build --verbosity normal ./UcnDomainDriven/
-    - name: Pack NuGet Package
-      run: dotnet pack --configuration release -p:PackageVersion=0.0.3 ./UcnDomainDriven/
-    - name: Push Package to GitHub Packages
-      run: dotnet nuget push "bin/Release/ucn.domain.0.0.3.nupkg"  --api-key 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 --source "github"
