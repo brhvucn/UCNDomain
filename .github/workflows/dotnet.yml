@@ -23,7 +23,11 @@ jobs:
       run: dotnet build --no-restore ./UcnDomainDriven/
     - name: Test
       run: dotnet test --no-build --verbosity normal ./UcnDomainDriven/
-    - name: Package NuGet
-      run: dotnet pack --configuration release ./UcnDomainDriven/
+    - name: Pack NuGet Package
+      run: |
+      arrTag=(${GITHUB_REF//\// })
+    VERSION="${arrTag[2]}"
+    VERSION="${VERSION//v}"
+      dotnet pack --configuration release -p:PackageVersion=$VERSION ./UcnDomainDriven/
     - name: Push Package to GitHub Packages
-      run: dotnet nuget push "bin/Release/ucn.domain.1.0.0.nupkg"  --api-key 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 --source "github"
+      run: dotnet nuget push "bin/Release/ucn.domain.$VERSION.nupkg"  --api-key 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 --source "github"
