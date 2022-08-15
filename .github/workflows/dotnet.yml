@@ -26,4 +26,4 @@ jobs:
     - name: Pack NuGet Package
       run: dotnet pack --configuration release -p:PackageVersion=$GITHUB_REF ./UcnDomainDriven/
     - name: Push Package to GitHub Packages
-      run: dotnet nuget push "bin/Release/ucn.domain.$VERSION.nupkg"  --api-key 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 --source "github"
+      run: dotnet nuget push "bin/Release/ucn.domain.$VERSION.nupkg"  --api-key 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 --source "github"
