@@ -4,10 +4,10 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<Description>Simple implementation of helper classes to fascilitate DDD on UCN</Description>
 		<PackageId>UCN.Domain</PackageId>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<Authors>Brian Hvarregaard</Authors>
 		<Company>University College Nordjylland (UCN)</Company>
-		<PackageDescription>This package adds an Octocat!</PackageDescription>
+		<PackageDescription>This package contains helper classes for DDD.</PackageDescription>
 		<RepositoryUrl>https://github.com/brhvucn/UCNDomain</RepositoryUrl>
 	</PropertyGroup>
 
