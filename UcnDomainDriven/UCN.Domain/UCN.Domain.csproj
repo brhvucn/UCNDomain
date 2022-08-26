@@ -4,11 +4,13 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<Description>Simple implementation of helper classes to fascilitate DDD on UCN</Description>
 		<PackageId>UCN.Domain</PackageId>
-		<Version>0.0.2</Version>
+		<Version>0.0.4</Version>
+		<License></License>
 		<Authors>Brian Hvarregaard</Authors>
 		<Company>University College Nordjylland (UCN)</Company>
 		<PackageDescription>This package contains helper classes for DDD.</PackageDescription>
 		<RepositoryUrl>https://github.com/brhvucn/UCNDomain</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
